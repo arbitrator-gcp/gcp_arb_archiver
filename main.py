@@ -52,7 +52,7 @@ def pdf_builder(gen, exch):
 
     return(pdf_tmp)
 
-def archiver(request):
+def archiver(event, context):
 
     # if the table exists, get the most recent record. if not, set to a historic date
     try:
